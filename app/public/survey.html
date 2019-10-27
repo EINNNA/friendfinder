@@ -3,7 +3,8 @@
 
 <head>
     <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
     <!-- jQUERY -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- JAVASCRIPT -->
@@ -23,10 +24,11 @@
                     <label for="picPic">Link to photo</label>
                     <textarea class="form-control" id="picPic" rows="1"></textarea>
                 </div>
-            
+
                 <div class="form-group">
                     <label for="question1">Pineapples on Pizza</label>
                     <select class="form-control" id="q1">
+                        <option></option>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -38,6 +40,7 @@
                 <div class="form-group">
                     <label for="question2">Vanilla Ice Cream</label>
                     <select class="form-control" id="q2">
+                        <option></option>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -49,6 +52,7 @@
                 <div class="form-group">
                     <label for="question3">Vegans</label>
                     <select class="form-control" id="q3">
+                        <option></option>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -61,6 +65,7 @@
                 <div class="form-group">
                     <label for="question4">Caffeine Free Coffee</label>
                     <select class="form-control" id="q4">
+                        <option></option>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -72,6 +77,7 @@
                 <div class="form-group">
                     <label for="question5">Avocado Toast</label>
                     <select class="form-control" id="q5">
+                        <option></option>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -83,6 +89,7 @@
                 <div class="form-group">
                     <label for="question6">Slow walkers</label>
                     <select class="form-control" id="q6">
+                        <option></option>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -94,6 +101,7 @@
                 <div class="form-group">
                     <label for="question7">Your Boss</label>
                     <select class="form-control" id="q7">
+                        <option></option>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -105,6 +113,7 @@
                 <div class="form-group">
                     <label for="question8">UR MOM</label>
                     <select class="form-control" id="q8">
+                        <option></option>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -118,20 +127,18 @@
     </div>
 
     <script>
-        $(".btn").on("click", function() {
+        $(".btn").on("click", function () {
             event.preventDefault();
-            var validation = true;
-            if ($(".nameName").val() == "" || $(".picPic").val() == "" || questLoop == ""){
+            var validation = "";
+            if ($(".nameName").val() == "" || $(".picPic").val() == "" || $("#q1").val() == "" || $("#q2").val() == "" || $("#q3").val() == "" || $("#q4").val() == "" || $("#q5").val() == "" || $("#q6").val() == "" || $("#q7").val() == "" || $("#q8").val() == "") {
                 validation = false;
                 alert("Please fill in all fields");
-            //else if (answers == "") {
-            //    validation = false;
             }
-            else (validation) 
-                var newFriend = {
-                    name: $("#nameName").val(),
-                    photo: $("#picPic").val(),
-                    scores: [
+            else (validation) {
+            var newFriend = {
+                name: $("#nameName").val(),
+                photo: $("#picPic").val(),
+                scores: [
                     $("#q1").val(),
                     $("#q2").val(),
                     $("#q3").val(),
@@ -140,17 +147,29 @@
                     $("#q6").val(),
                     $("#q7").val(),
                     $("#q8").val()
-                    ]
-                }
+                ]
+            }
+            clear();
+        }
+            console.log(newFriend)
         });
 
-        function questionLoop() {
-        for (i = 1; i <= 8; i++){
-            var answers = $("#q"+[i]+"").val();
-    };
-    var questLoop = questionLoop();
+        function clear() {
+            $("#q1").val(),
+            $("#q2").val("");
+            $("#q3").val("");
+            $("#q4").val("");
+            $("#q5").val("");
+            $("#q6").val("");
+            $("#q7").val("");
+            $("#q8").val("");
+        };
 
+        function friendPoints(){
+
+        };
     </script>
 
-    </body>
+</body>
+
 </html>
