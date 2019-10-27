@@ -1,78 +1,156 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- BOOTSTRAP -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
-        <!-- jQUERY -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <body>
-            <div class="card">
-                    <div class="card-body">
-                      <h1>Answer a few questions to find the perfect friend</h1>
-                        <h3>1 is the worst thing on Earth and 5 is the best.</h3>
-                        <select class="form control q1">
-                            <option selected>Pineapples on Pizza</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
 
-                            <option selected>Vanilla Ice Cream</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+<head>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <!-- jQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- JAVASCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-                            <option selected>Vegans</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+<body>
+    <div class="card">
+        <div class="card-body">
+            <h1>Answer a few questions to find the perfect friend</h1>
+            <h3>1 is the worst thing on Earth and 5 is the best.</h3>
+            <form>
+                <div class="form-group">
+                    <label for="nameName">Name</label>
+                    <textarea class="form-control" id="nameName" rows="1"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="picPic">Link to photo</label>
+                    <textarea class="form-control" id="picPic" rows="1"></textarea>
+                </div>
+            
+                <div class="form-group">
+                    <label for="question1">Pineapples on Pizza</label>
+                    <select class="form-control" id="q1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
 
-                            <option selected>Caffeine Free Coffee</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                <div class="form-group">
+                    <label for="question2">Vanilla Ice Cream</label>
+                    <select class="form-control" id="q2">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
 
-                            <option selected>Avocado Toast</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                <div class="form-group">
+                    <label for="question3">Vegans</label>
+                    <select class="form-control" id="q3">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
 
-                            <option selected>Slow walkers</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                    </select>
+                </div>
 
-                            <option selected>Your Boss</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                <div class="form-group">
+                    <label for="question4">Caffeine Free Coffee</label>
+                    <select class="form-control" id="q4">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
 
-                            <option selected>UR MOM</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                  </div>
+                <div class="form-group">
+                    <label for="question5">Avocado Toast</label>
+                    <select class="form-control" id="q5">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
 
+                <div class="form-group">
+                    <label for="question6">Slow walkers</label>
+                    <select class="form-control" id="q6">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
 
-        <!-- JAVASCRIPT -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="assets/javascript/app.js"></script>
+                <div class="form-group">
+                    <label for="question7">Your Boss</label>
+                    <select class="form-control" id="q7">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="question8">UR MOM</label>
+                    <select class="form-control" id="q8">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-warning btn-lg btn-block">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        $(".btn").on("click", function() {
+            event.preventDefault();
+            var validation = true;
+            if ($(".nameName").val() == "" || $(".picPic").val() == "" || questLoop == ""){
+                validation = false;
+                alert("Please fill in all fields");
+            //else if (answers == "") {
+            //    validation = false;
+            }
+            else (validation) 
+                var newFriend = {
+                    name: $("#nameName").val(),
+                    photo: $("#picPic").val(),
+                    scores: [
+                    $("#q1").val(),
+                    $("#q2").val(),
+                    $("#q3").val(),
+                    $("#q4").val(),
+                    $("#q5").val(),
+                    $("#q6").val(),
+                    $("#q7").val(),
+                    $("#q8").val()
+                    ]
+                }
+        });
+
+        function questionLoop() {
+        for (i = 1; i <= 8; i++){
+            var answers = $("#q"+[i]+"").val();
+    };
+    var questLoop = questionLoop();
+
+    </script>
+
     </body>
-</html>    
+</html>
