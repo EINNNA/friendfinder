@@ -127,14 +127,8 @@
     </div>
 
     <script>
-        $(".btn").on("click", function () {
+        $(".btn").on("click", function() {
             event.preventDefault();
-            var validation = "";
-            if ($(".nameName").val() == "" || $(".picPic").val() == "" || $("#q1").val() == "" || $("#q2").val() == "" || $("#q3").val() == "" || $("#q4").val() == "" || $("#q5").val() == "" || $("#q6").val() == "" || $("#q7").val() == "" || $("#q8").val() == "") {
-                validation = false;
-                alert("Please fill in all fields");
-            }
-            else (validation) => {
             var newFriend = {
                 name: $("#nameName").val(),
                 photo: $("#picPic").val(),
@@ -149,9 +143,8 @@
                     $("#q8").val()
                 ]
             }
+            console.log(newFriend);
             clear();
-        }
-            console.log(newFriend)
         });
 
         function clear() {
@@ -165,9 +158,6 @@
             $("#q8").val("");
         };
 
-        function friendPoints(){
-
-        };
     </script>
 
 </body>
