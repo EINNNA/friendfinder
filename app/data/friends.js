@@ -37,7 +37,7 @@ var friends = [
     {
         "name": "Elizabeth",
         "photo": "https://vignette.wikia.nocookie.net/theoffice/images/2/26/Elizabeth.jpg/revision/latest?cb=20070203172942",
-        "scores": [3,4,5,5,5,1,1,2]
+        "scores": [3,4,5,5,5,2,1,2]
     }
 
 ];

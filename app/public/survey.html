@@ -13,7 +13,7 @@
 <body>
     <div class="card">
         <div class="card-body">
-            <h1>Answer a few questions to find the perfect friend</h1>
+            <h1>FIND THE PERFECT FRIEND</h1>
             <h3>1 is the worst thing on Earth and 5 is the best.</h3>
             <form>
                 <div class="form-group">
@@ -126,39 +126,59 @@
         </div>
     </div>
 
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Best Friend</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div id="bestiesName"></div>
+                <img src="" id="bestiesPic">
+                <div id="bestiesPoints"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <script>
-        $(".btn").on("click", function() {
+        $(".btn").on("click", function(res) {
             event.preventDefault();
-            var newFriend = {
-                name: $("#nameName").val(),
-                photo: $("#picPic").val(),
-                scores: [
-                    $("#q1").val(),
-                    $("#q2").val(),
-                    $("#q3").val(),
-                    $("#q4").val(),
-                    $("#q5").val(),
-                    $("#q6").val(),
-                    $("#q7").val(),
-                    $("#q8").val()
-                ]
-            }
-            console.log(newFriend);
-            clear();
+            var scoreArray = [];
+            for (i = 1; i <= 8; i++){
+                var val = $("#q"+i+"").val();
+                scoreArray.push(val);
+            };
+            console.log(scoreArray);
+            
+            var submitted = {
+                name: "",
+                photo: "",
+                scores: scoreArray
+            };
+            submitted.name = $("#nameName").val();
+            submitted.photo = $("#picPic").val();
+
+            $.post("/api/friends", submitted, function(data){
+                console.log(data);
+                $("#bestiesName").text(bestFriend.name);
+                $("#bestiesPic").attr(bestFriend.photo);
+                $("#bestiesScore").text(bestFriend.score);
+            });
         });
-
-        function clear() {
-            $("#q1").val(),
-            $("#q2").val("");
-            $("#q3").val("");
-            $("#q4").val("");
-            $("#q5").val("");
-            $("#q6").val("");
-            $("#q7").val("");
-            $("#q8").val("");
-        };
-
     </script>
+    <style>
+    body {
+        width: 680px;
+        margin: 0 auto;
+    }    
+    </style>
 
 </body>
 
