@@ -9,7 +9,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- JAVASCRIPT -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; connect-src 'self';font-src 'self'; img-src 'self' data: https:; style-src 'self' ; script-src 'self'">
+</head>
+
 <body>
     <div class="card">
         <div class="card-body">
@@ -20,164 +21,144 @@
                     <label for="nameName">Name</label>
                     <textarea class="form-control" id="nameName" rows="1"></textarea>
                 </div>
+
                 <div class="form-group">
                     <label for="picPic">Link to photo</label>
                     <textarea class="form-control" id="picPic" rows="1"></textarea>
-                </div>
+                    <div>
 
-                <div class="form-group">
-                    <label for="question1">Pineapples on Pizza</label>
-                    <select class="form-control" id="q1">
-                        <option></option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
+                        <div class="form-group">
+                            <label for="question1">Pineapples on Pizza</label>
+                            <select class="form-control" id="q1">
+                                <option></option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <!-- 
+                        <div class="form-group">
+                            <label for="question2">Vanilla Ice Cream</label>
+                            <select class="form-control" id="q2">
+                                <option></option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
 
-                <div class="form-group">
-                    <label for="question2">Vanilla Ice Cream</label>
-                    <select class="form-control" id="q2">
-                        <option></option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
+                        <div class="form-group">
+                            <label for="question3">Vegans</label>
+                            <select class="form-control" id="q3">
+                                <option></option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
 
-                <div class="form-group">
-                    <label for="question3">Vegans</label>
-                    <select class="form-control" id="q3">
-                        <option></option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                            </select>
+                        </div>
 
-                    </select>
-                </div>
+                        <div class="form-group">
+                            <label for="question4">Caffeine Free Coffee</label>
+                            <select class="form-control" id="q4">
+                                <option></option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
 
-                <div class="form-group">
-                    <label for="question4">Caffeine Free Coffee</label>
-                    <select class="form-control" id="q4">
-                        <option></option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
+                        <div class="form-group">
+                            <label for="question5">Avocado Toast</label>
+                            <select class="form-control" id="q5">
+                                <option></option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
 
-                <div class="form-group">
-                    <label for="question5">Avocado Toast</label>
-                    <select class="form-control" id="q5">
-                        <option></option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
+                        <div class="form-group">
+                            <label for="question6">Slow walkers</label>
+                            <select class="form-control" id="q6">
+                                <option></option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
 
-                <div class="form-group">
-                    <label for="question6">Slow walkers</label>
-                    <select class="form-control" id="q6">
-                        <option></option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
+                        <div class="form-group">
+                            <label for="question7">Your Boss</label>
+                            <select class="form-control" id="q7">
+                                <option></option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
 
-                <div class="form-group">
-                    <label for="question7">Your Boss</label>
-                    <select class="form-control" id="q7">
-                        <option></option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="question8">UR MOM</label>
-                    <select class="form-control" id="q8">
-                        <option></option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-                <button type="button" class="btn btn-warning btn-lg btn-block">Submit</button>
+                        <div class="form-group">
+                            <label for="question8">UR MOM</label>
+                            <select class="form-control" id="q8">
+                                <option></option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div> -->
+                        <button type="button" class="btn btn-warning btn-lg btn-block">Submit</button>
             </form>
         </div>
-    </div>
-
-    <div class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Best Friend</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <div id="bestiesName"></div>
-                <img src="" id="bestiesPic">
-                <div id="bestiesPoints"></div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
 
     <script>
-        $(".btn").on("click", function(res) {
-            event.preventDefault();
+        $(".btn").on("click", function (e) {
+            e.preventDefault();
             var scoreArray = [];
-            for (i = 1; i <= 8; i++){
-                var val = $("#q"+i+"").val();
-                scoreArray.push(val);
+            var newFriend = {
+                name: $("#nameName").val(),
+                photo: $("#picPic").val(),
+                scores: [
+                    $("#q1").val()
+                    // $("#q2").val(),
+                    // $("#q3").val(),
+                    // $("#q4").val(),
+                    // $("#q5").val(),
+                    // $("#q6").val(),
+                    // $("#q7").val(),
+                    // $("#q8").val()
+                ]
             };
-            console.log(scoreArray);
-            
-            var submitted = {
-                name: "",
-                photo: "",
-                scores: scoreArray
-            };
-            submitted.name = $("#nameName").val();
-            submitted.photo = $("#picPic").val();
 
-            $.post("/api/friends", submitted, function(data){
+            scoreArray.push(newFriend);
+            console.log(scoreArray);
+
+            $.post("/api/friends", newFriend function (data) {
                 console.log(data);
-                $("#bestiesName").text(bestFriend.name);
-                $("#bestiesPic").attr(bestFriend.photo);
-                $("#bestiesScore").text(bestFriend.score);
             });
         });
     </script>
     <style>
-    body {
-        width: 680px;
-        margin: 0 auto;
-    }    
+        body {
+            width: 680px;
+            margin: 0 auto;
+        }
     </style>
 
 </body>

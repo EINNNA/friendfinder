@@ -1,4 +1,4 @@
-var friends = require("../data/friends.js");
+var friends = require("../data/friends");
 
 module.exports = function(app) {
     app.get("/api/friends", function(request,res) {
@@ -15,6 +15,7 @@ module.exports = function(app) {
 
         var userData = req.body;
         var userScores = userData.scores;
+        var totalDifference;
         friends.push(userData);
 
         console.log(userData);
